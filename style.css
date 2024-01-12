@@ -1,0 +1,84 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: system-ui;
+    background: radial-gradient(circle, #888888, #000000) fixed;  
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    
+}
+
+/* Styling for the Left Section */
+.left-section {
+    flex: 1;
+    width: 40%; /* Adjust as needed */
+    background-color: rgba(255, 255, 255, 0.0);
+    padding: 20px;
+    overflow-y: visible;
+    color: #f0f0f0; /* Light color for text for readability */
+    margin-top: 25px;
+}
+
+.left-section h1 {
+    margin-bottom: 10px;
+}
+
+.left-section p {
+    margin-bottom: 20px;
+}
+
+/* Styling for the Right Section */
+.right-section {
+    flex: 1;
+    width: 60%; /* Adjust as needed */
+    background-color: rgba(255, 255, 255, 0.0);
+    padding: 20px;
+    overflow-y: auto;
+    color: #f0f0f0; /* Light color for text for readability */
+    margin-top: 25px;
+}
+
+.portfolio-item {
+    margin-bottom: 40px;
+}
+
+.portfolio-item h2 {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: #f0f0f0; /* Icon color */
+    font-size: 24px; /* Icon size */
+    margin-right: 10px; /* Space between icons */
+}
+
+.social-links a:hover {
+    color: #c0c0c0; /* Icon hover color */
+}
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch; /* Stretch items to fill the container */
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        margin-left: 0;
+        position: static;
+    }
+}
