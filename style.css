@@ -8,7 +8,7 @@
 body, html {
     height: 100%;
     font-family: system-ui;
-    background: radial-gradient(circle, #888888, #000000) fixed;  
+    background: radial-gradient(circle, #284d26, #000000) fixed;  
     max-width: 1200px;
     margin: 0 auto
 }
@@ -28,10 +28,16 @@ body, html {
     overflow-y: visible;
     color: #f0f0f0; /* Light color for text for readability */
     margin-top: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 .left-section h1 {
     margin-bottom: 10px;
+}
+
+.left-section h2 {
+    margin-bottom: 5px;
 }
 
 .left-section p {
@@ -47,26 +53,58 @@ body, html {
     overflow-y: auto;
     color: #f0f0f0; /* Light color for text for readability */
     margin-top: 25px;
+    
+}
+
+.right-section h2{
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+
+.right-section h1{
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+#portfolio-top-h1{
+    padding-top: 0;
 }
 
 .portfolio-item {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .portfolio-item h2 {
     margin-bottom: 10px;
 }
 
+a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c0c0c0;
+}
+
+.social-links {
+    margin-top: auto
+}
+
 .social-links a {
     color: #f0f0f0; /* Icon color */
     font-size: 24px; /* Icon size */
     margin-right: 10px; /* Space between icons */
+    margin-top: auto
 }
 
 .social-links a:hover {
     color: #c0c0c0; /* Icon hover color */
 }
 
+.italic {
+    font-style: italic;
+}
 
 
 /* Responsive Design */
