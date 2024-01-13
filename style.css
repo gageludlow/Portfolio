@@ -26,7 +26,7 @@ body, html {
     background-color: rgba(255, 255, 255, 0.0);
     padding: 20px;
     overflow-y: visible;
-    color: #f0f0f0; /* Light color for text for readability */
+    color: #f0f0f0b9; /* Light color for text for readability */
     margin-top: 25px;
     display: flex;
     flex-direction: column;
@@ -51,7 +51,7 @@ body, html {
     background-color: rgba(255, 255, 255, 0.0);
     padding: 20px;
     overflow-y: auto;
-    color: #f0f0f0; /* Light color for text for readability */
+    color: #f0f0f0b9; /* Light color for text for readability */
     margin-top: 25px;
     
 }
@@ -71,40 +71,71 @@ body, html {
 }
 
 .portfolio-item {
+    display: flex;
     margin-bottom: 20px;
 }
 
 .portfolio-item h2 {
+    font-size: 16px;
     margin-bottom: 10px;
 }
 
+.portfolio-item img {
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    width: 100px;
+    height: 100px;
+}
+
+.portfolio-item-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
 a {
-    color: #f0f0f0;
+    color: #f0f0f0b9;
     text-decoration: none;
 }
 
 a:hover {
-    color: #c0c0c0;
+    color: #c0c0c0b9;
 }
 
 .social-links {
-    margin-top: auto
+    margin-top: auto;
+    padding-top: 20px;
+    margin-bottom: 30px;
 }
 
 .social-links a {
-    color: #f0f0f0; /* Icon color */
+    color: #f0f0f0b9; /* Icon color */
     font-size: 24px; /* Icon size */
     margin-right: 10px; /* Space between icons */
-    margin-top: auto
+    margin-top: auto;
 }
 
 .social-links a:hover {
-    color: #c0c0c0; /* Icon hover color */
+    color: #c0c0c0b9; /* Icon hover color */
 }
 
 .italic {
     font-style: italic;
 }
+
+.jump-links {
+    font-weight: 500;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.jump-links a {
+    padding-top: 20px;
+}
+
 
 
 /* Responsive Design */
@@ -112,11 +143,26 @@ a:hover {
     .container {
         flex-direction: column;
         align-items: stretch; /* Stretch items to fill the container */
+        
+        
     }
 
     .left-section, .right-section {
         width: 100%;
         margin-left: 0;
         position: static;
+        overflow-y: visible;
+    }
+
+    .right-section {
+        margin-top: 0px;
+    }
+
+    html, body{
+        overflow-y: scroll;
+    }
+
+    .social-links{
+        margin-bottom: 0px;
     }
 }
